@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOX</title>
+    <style>
+        .type1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+        }
+        .type2{
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            font-size: large;
+            font-family: cursive;
+            text-align: center;
+            width: 40%;
+            border-radius: 25px 25px 25px 25px;
+            border-style: none;
+            outline: 0;
+            background-color: #c8d8e4;
+            color: #2b6777;
+        }
+        .type3{
+            background-color: #2b6777;
+        }
+        .type4{
+            text-align: center;
+            color: #c8d8e4;
+            font-size: medium;
+            font-family: cursive;
+        }
+        .type5{
+            text-align: center;
+            color: #c8d8e4;
+            font-size: large;
+            margin-bottom: 50px;
+            font-family: cursive;
+        }
+    </style>
+
+</head>
+<body class = "type3">
+    <div class="type5">
+        <h1> NOX </h1>
+    </div>
+    <div class="type5">
+        <h2> An English to Bangla Dictionary </h2>
+    </div>
+    <div class="type1">
+        <input class="type2" type = "text" onkeyup="search()" id = "query" placeholder="Please type your word here" onfocus="this.placeholder = ''"
+        onblur="this.placeholder = 'Please type your word here'">
+    </div>
+    <div class="type4">
+            <p id="output1" class="text-center text-wrap output"> </p>
+            <p id="output2" class="text-center text-wrap output"> </p>
+            <p id="output3" class="text-center text-wrap output"> </p>
+            <p id="output4" class="text-center text-wrap output"> </p>
+            <p id="output5" class="text-center text-wrap output"> </p>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
